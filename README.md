@@ -1,2 +1,0 @@
-# Platformer
-Chuck Norris Platformer

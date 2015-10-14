@@ -19,6 +19,8 @@ var Keyboard = function()
 	this.KEY_S = 83;
 	this.KEY_W = 87;
 	this.KEY_SHIFT = 16;
+	this.KEY_N = 78;
+	this.KEY_M = 77;
 };
 
 Keyboard.prototype.onKeyDown = function(evt)
@@ -32,4 +34,8 @@ Keyboard.prototype.onKeyUp = function(evt)
 Keyboard.prototype.isKeyDown = function(keyCode)
 {
 	return this.keys[keyCode];
+};
+Keyboard.prototype.isKeyUp = function(keyCode)
+{
+	return !this.keys[keyCode];
 };
